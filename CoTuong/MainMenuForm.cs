@@ -19,7 +19,7 @@ namespace CoTuong
 
         private void newgame_Click(object sender, EventArgs e)
         {
-            ModeSelectForm modeForm = new ModeSelectForm();
+            ModeSelectForm modeForm = new ModeSelectForm(this);
             modeForm.Show();
             this.Hide();
         }

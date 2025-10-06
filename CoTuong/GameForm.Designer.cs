@@ -1,14 +1,14 @@
 ﻿namespace CoTuong
 {
-    partial class ModeSelectForm
+    partial class GameForm
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,37 +23,34 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            ModeBack = new Button();
+            panel1 = new Panel();
             SuspendLayout();
             // 
-            // ModeBack
+            // panel1
             // 
-            ModeBack.Location = new Point(346, 286);
-            ModeBack.Name = "ModeBack";
-            ModeBack.Size = new Size(94, 29);
-            ModeBack.TabIndex = 0;
-            ModeBack.Text = "Back";
-            ModeBack.UseVisualStyleBackColor = true;
-            ModeBack.Click += ModeBack_Click;
+            panel1.Location = new Point(343, 37);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(570, 557);
+            panel1.TabIndex = 0;
             // 
-            // ModeSelectForm
+            // GameForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(ModeBack);
-            Name = "ModeSelectForm";
-            Text = "Form1";
+            ClientSize = new Size(1240, 655);
+            Controls.Add(panel1);
+            Name = "GameForm";
+            Text = "GameForm";
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button ModeBack;
+        private Panel panel1;
     }
 }
