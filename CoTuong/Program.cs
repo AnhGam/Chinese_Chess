@@ -1,3 +1,4 @@
+
 namespace CoTuong
 {
     internal static class Program
