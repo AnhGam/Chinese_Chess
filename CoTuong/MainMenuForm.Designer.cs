@@ -89,7 +89,6 @@ namespace CoTuong
             Controls.Add(newgame);
             Controls.Add(Continue);
             Name = "MainMenuForm";
-            Text = "";
             ResumeLayout(false);
         }
 
