@@ -28,30 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
+            Board = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)Board).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // Board
             // 
-            panel1.Location = new Point(343, 37);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(570, 557);
-            panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
+            Board.Image = Properties.Resources.XiangquiBoard;
+            Board.Location = new Point(22, 12);
+            Board.Name = "Board";
+            Board.Size = new Size(800, 884);
+            Board.TabIndex = 0;
+            Board.TabStop = false;
+            Board.Click += Board_Click;
             // 
             // GameForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1240, 655);
-            Controls.Add(panel1);
+            ClientSize = new Size(1515, 908);
+            Controls.Add(Board);
             Name = "GameForm";
             Text = "GameForm";
+            Load += GameForm_Load;
+            ((System.ComponentModel.ISupportInitialize)Board).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
+        private PictureBox Board;
     }
 }
